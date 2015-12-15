@@ -7,9 +7,9 @@ function toggleVisibility(id) {
 }
 
 function videoText(id) {
-    var element = document.getElementById(id);
-    if(element.innerHTML === 'Video') 
-      element.innerHTML = 'Close!';
-    else
-       element.innerHTML = 'Video';
+  var element = document.getElementById(id);
+  if(element.innerHTML === 'Video') 
+    element.innerHTML = 'Close!';
+  else
+     element.innerHTML = 'Video';
 }
