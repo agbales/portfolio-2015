@@ -7,6 +7,15 @@ body {
   overflow: hidden;
 }
 
+a, a:visited, a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover { 
+  opacity: .5;
+}
+
 h1 {
   font-family: 'Goudy Bookletter 1911', serif;
   font-size: 55px;
@@ -20,52 +29,18 @@ h1 {
   transition: all .7s ease;
 }
 
-ul {
-  height: 50px;
-  margin: 100px 0px -10px 0px;
-  list-style-type: none;
-  z-index: 2;
-  transition: all .5s;
-}
-
 li {
   display: inline-block;
   margin: 30px 10px;
   transition: all .5s;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:hover { 
-  opacity: .5;
-}
-
-.icon-box {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 135px;
-  width: 780px;
+ul {
+  height: 50px;
+  margin: 100px 0px -10px 0px;
+  list-style-type: none;
   z-index: 2;
-}
-
-.invert {
-  -webkit-filter: invert(1);
-  filter: invert(1);
-  z-index: -20;
-}
-
-#behance {
-  transform: scale(1.4);
-  margin: 0px 5px 0px 0px;
-}
-
-#ruby {
-  margin: 0px 10px;
-  transform: scale(.9) translateY(-10px);
+  transition: all .5s;
 }
 
 #andrew {
@@ -87,19 +62,9 @@ a:hover {
   z-index: 1;
 }
 
-#watch {
-  position: absolute;
-  display: none;
-  top: 0;
-  margin: 0px -10px;
-  height: 82%;
-  width: 60%;
-  background: #181818;
-  transition: all 2s ease;
-}
-
-#watch:target {
-  display: block;
+#behance {
+  transform: scale(1.4);
+  margin: 0px 5px 0px 0px;
 }
 
 .click {
@@ -119,6 +84,41 @@ a:hover {
   background: #181818;
   border-radius: 50%;
   padding: 30px 20px;
+  text-decoration: none;
+}
+
+#github {
+  margin: 0px 10px;
+}
+
+.icon-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 135px;
+  width: 780px;
+  z-index: 2;
+}
+
+.invert {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  z-index: -20;
+}
+
+#watch {
+  position: absolute;
+  display: none;
+  top: 0;
+  margin: 0px -10px;
+  height: 82%;
+  width: 60%;
+  background: #181818;
+  transition: all 2s ease;
+}
+
+#watch:target {
+  display: block;
 }
 
 /* Blinker */
@@ -209,6 +209,10 @@ a:hover {
 @media (max-width: 600px) {
   #andrew {
     display: none 
+  }
+
+  .icon-box {
+    width: 100%;
   }
 
   h1 {
