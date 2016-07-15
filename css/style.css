@@ -108,10 +108,11 @@ ul {
 
 #watch {
   position: absolute;
-  display: none;
   top: 0;
+  left: 0;
+  display: none;
   margin: 0px -10px;
-  height: 82%;
+  height: 100px;
   width: 60%;
   background: #181818;
   transition: all 2s ease;

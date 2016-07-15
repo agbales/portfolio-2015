@@ -1,4 +1,12 @@
+function setVidHeight() {
+  var vid = document.getElementById('watch');
+  vid.style.height = window.innerHeight - 130 + 'px';
+}
+
 function toggleVisibility(id) {
+
+  setVidHeight();
+
   var e = document.getElementById(id);
   if(e.style.display == 'block')
     e.style.display = 'none';
